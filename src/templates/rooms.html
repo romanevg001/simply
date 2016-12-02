@@ -1,0 +1,10 @@
+<div class="page-rooms">
+  
+
+  <h3>{{currentUser.name}} <small class="pull-right"><a ui-sref="home" ng-click="logout()">logout</a></small></h3>
+
+  <a ui-sref="rooms.edit" ui-sref-active="hide" ng-if="currentUser.name == 'admin'">Edit rooms</a>  
+
+  <ui-view></ui-view>
+
+</div>

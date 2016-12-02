@@ -1,0 +1,50 @@
+<div class="page-roomsedit">
+  
+  
+
+  <a ui-sref="rooms.chat">&laquo; Back</a>
+  <p>&nbsp;</p>
+  <form>
+      <!--<div class="">
+        <div  class="form-group col-xs-10" ng-show="adding">
+            <input type="text" class="form-control" ng-model="newroom" />
+        </div>
+        <p class="pull-right" ng-hide="adding"><button class="btn btn-primary btn-xs" ng-click="adding=true">add new</button></p>
+        <p class="pull-right" ng-show="adding"><button class="btn btn-primary btn-xs" ng-click="add()">save</button></p>
+        
+    </div>-->
+    <table class="table table-hover">
+        <tr ng-repeat="room in roomsList">
+            <td>
+                <span ng-hide="room.editing">{{room.name}}</span>
+                <div ng-show="room.editing" class="form-group">
+                    <input type="text" class="form-control" ng-model="room.name" />
+                </div>
+            </td>
+            <td>
+                <div class="pull-right">
+                    <button  ng-show="room.editing" class="btn btn-primary btn-xs" ng-click="edit(room)">save</button> 
+                    <button  ng-hide="room.editing" class="btn btn-default btn-xs" ng-click="room.editing=true">edit</button> 
+                    <button class="btn btn-default btn-xs" ng-click="del(room)">delete</button>
+                </div>
+            </td>
+            
+        </tr>
+        <tr>
+            <td>
+             
+                <div ng-show="adding" class="form-group">
+                    <input type="text" class="form-control" ng-model="newroom" />
+                </div>
+            </td>
+            <td>
+                <div class="pull-right">
+                   <button  ng-hide="adding" class="btn btn-primary btn-xs" ng-click="adding=true">add new</button>
+                    <button  ng-show="adding" class="btn btn-primary btn-xs" ng-click="add()">save</button>
+                </div>
+            </td>
+            
+        </tr>
+    </table>
+  </form>
+</div>

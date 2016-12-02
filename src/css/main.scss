@@ -1,0 +1,65 @@
+ @import './../../node_modules/bootstrap-sass/assets/stylesheets/_bootstrap';
+ $dark-blue: #0a5071;
+$darken-blue: #344e61;
+$light-blue: #3bc4ef;
+$lighten-blue: #b6dbdf;
+$light-grey: #d1d5d8;
+$red: #ef6755;
+$mint: #1eb29e;
+
+
+$btn-default-color:              $darken-blue !default;
+$btn-default-bg:                 $lighten-blue !default;
+$btn-default-border:             $lighten-blue !default;
+
+
+
+ @import './login';
+ @import './rooms';
+ @import './chat';
+ 
+ 
+
+
+
+
+.errors{
+  margin-top: 30px;
+  color: $red;
+}
+
+.__loading {
+
+  min-height: 20px;
+
+  &:before {
+    display: block;
+    opacity: 0;
+    height: 20px;
+    width: 100%;
+    border-radius: 5px;
+    margin-top: 5px;
+
+    content: '';
+    background-color: $btn-default-border;
+    background-image: linear-gradient(45deg,rgba(255,255,255,.5) 25%,transparent 25%,transparent 50%,rgba(255,255,255,.5) 50%,rgba(255,255,255,.5) 75%,transparent 75%,transparent);
+    background-size: 30px 30px;
+    animation: progress 1s infinite linear ;
+  }
+
+}
+
+
+@keyframes progress {
+  from {
+    background-position: 0 0;
+    opacity: 1;
+  }
+  to {
+    background-position: -60px 0;
+    opacity: 1;
+  }
+}
+
+
+

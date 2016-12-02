@@ -1,0 +1,36 @@
+{
+  "api": {
+    "url": "http://localhost:3000"
+  },
+  "root": {
+    "src": "./src",
+    "dest": "./public"
+  },
+
+  "tasks": {
+    "browserSync": {
+      "server": {
+        "baseDir": "public"
+      }
+    },
+
+    "js": {
+      "src": "js",
+      "dest": "js",
+      "entries": {
+        "index": ["./index"]
+      }
+    },
+
+    "css": {
+      "src": "css",
+      "dest": "css"
+    },
+
+    "img": {
+      "src": "img",
+      "dest": "img"
+    }
+
+  }
+}

@@ -1,0 +1,12 @@
+{
+    "rooms": [
+        {
+            "name": "Common",
+            "id": "getCommonRoom"
+        },
+        {
+            "name": "Flowers",
+            "id": "getFlowersRoom"
+        }
+    ]
+}

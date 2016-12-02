@@ -1,0 +1,15 @@
+{
+    "name": "Flowers",
+    "messages": [
+        {
+            "date": "04.06.12 12:05",
+            "text": "Yes! I am here!",
+            "author": "Mila"
+        },
+        {
+            "date": "04.06.12 12:06",
+            "text": "Where are you from?",
+            "author": "Mila"
+        }
+    ]
+}
